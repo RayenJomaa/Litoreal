@@ -1,0 +1,137 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f2f2f2; Default background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: rgba(163, 35, 35, 0.1); Transparent white background
+    width: 600px;
+
+    padding: 40px;
+    border-radius: 8px;
+    border: #f2f2f2 solid 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text inside the container */
+  }
+  .ktiba{
+    width: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+
+  }
+.buttonlogin {
+  /* margin-left: 43.5%; */
+  border-radius: 10%;
+  margin-top: 30px;
+  background-color: #1684d2;
+  color: #FFFFFF;
+  width: 200px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px #FFFFFF solid;
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+  filter: drop-shadow(0 0 14px black);
+}
+.buttonlogin a:hover {
+  color: #fc7805;
+  text-decoration: none;
+}
+  
+  h1 {
+    width: 300px;
+    background-color: rgba(22, 81, 169, 0.4);
+    padding: 10px 10px 10px 10px;
+    filter: drop-shadow(0 14px 14px black);
+    margin-top: 0;
+    margin-left: 20%;
+    margin-bottom: 50px;
+    color: #ffffff; /* Set the color of "GYMWAVE" */
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Slightly transparent border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(126, 237, 237, 0.3); /* Slightly transparent white background */
+  }
+  
+  input[type="submit"] {
+    background-color: #00BFFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #00BFFF;
+  }
+  
+  body {
+    background-image: url('surf.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+
+  .social-media{
+    padding-top: 30px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 400px;
+    color: #FFFFFF;
+  }
+  .social-media a i {
+    font-size: 20px; 
+    color: #f3f2ef; 
+  }
+  
+  .social-media a i:hover {
+    color: #0056b3; 
+  }
+
+  .check{
+    background: rgba(121, 204, 240,0.5);
+    color: #ffffff;
+    font-size: 22px;
+  }
+  .invité{
+    background-color: rgba(84, 179, 243, 0.5);
+    margin-left: 30px;
+    animation-duration: .8s;
+   animation-name: clignoter;
+   animation-iteration-count: infinite;
+   transition: none;
+
+  }
+  @keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+  }
+  .lien{
+    color: #000000;
+    font-weight: bolder ;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  

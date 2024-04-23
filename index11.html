@@ -1,0 +1,640 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Litoreal | CATALOGUE</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> Litoreal
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Acceuil</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Vedettes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Produits</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">Nouveautés</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="login.html" class="nav__link">S'identifier</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                    <div class="traduction">
+                        <a class="tt"  href="index11.html"><img src="la-france.png" height="20px" width="20px"/></a></li> <br>
+                        <a class="tt"  href="index11ang.html"><img src="etats-unis.png" height="20px" width="20px"/></a></li>
+                        </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">Mon Panier</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/featured1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">ADVENCED SUIT</h3>
+                        <span class="cart__price">105€</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/featured3.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">INTERMEDIATE SUIT</h3>
+                        <span class="cart__price">150€</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/new1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">INTERMEDIATE SUIT</h3>
+                        <span class="cart__price">65€</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 produits</span>
+                <span class="cart__prices-total">320€</span>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="5454.jpg" alt="" class="home__img" height="1100px" width="500px">
+                    </div>
+    
+                    <div class="home__social">
+                        <a href="https://www.instagram.com/litoreal_official/" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+            
+                        <a href="https://www.instagram.com/litoreal_official/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">Dernier Produit <br> Advanced suit</h1>
+                        <p class="home__description">
+                            Plongez en toute confiance dans les eaux les plus froides avec notre Advanced 
+                            Suit. Offrant une isolation thermique maximale et une protection contre les 
+                            éléments, nos combinaisons Integral 7 vous permettent de rester au chaud et à 
+                            l'aise lors de vos aventures sous-marines les plus extrêmes.
+                        </p>
+                        <span class="home__price">320€</span>
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                En savoir plus
+                            </a>
+
+                            <button class="button home__button">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    En Vedette
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">Promotion</span>
+
+                        <img src="assets/img/featured1.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Advenced suit</h3>
+                            <span class="featured__price">320€</span>
+                        </div>
+
+                        <button class="button featured__button">Ajouter au panier</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Promotion</span>
+
+                        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Intermediate shorty</h3>
+                            <span class="featured__price">233€</span>
+                        </div>
+
+                        <button class="button featured__button">Ajouter au panier</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Promotion</span>
+
+                        <img src="assets/img/featured3.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Intermediate suit</h3>
+                            <span class="featured__price">285€</span>
+                        </div>
+
+                        <button class="button featured__button">Ajouter au panier</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            A La Une
+                        </h2>
+    
+                        <h1 class="story__title">
+                            Gagnez un Pack de Plongée  de Rêve avec Litoreal !
+                        </h1>
+    
+                        <p class="story__description">
+                            Participez dès maintenant à notre concours exclusif pour avoir la chance de
+                             remporter un pack de plongée ultime ! Plongez dans l'aventure avec style et
+                              confort grâce à notre gamme de combinaisons de plongée de haute qualité. 
+                              Que vous soyez un plongeur chevronné ou que vous découvriez les merveilles
+                               sous-marines pour la première fois, ce pack de plongée vous offrira tout ce
+                                dont vous avez besoin pour explorer les océans en toute confiance. 
+                                Ne manquez pas cette opportunité unique de gagner le pack de plongée de 
+                                vos rêves - participez dès maintenant pour une chance de gagner !
+                        </p>
+    
+                        <a href="#" class="button button--small">Découvrir</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="assets/img/story.png" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    Produits
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/shortm1.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">Shorty 3</h3>
+                        <span class="products__price">135.48€</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/shorw1.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title"> Beginner Shorty 3</h3>
+                        <span class="products__price">135.48€</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/shortm2.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">Beginner Shorty 5</h3>
+                        <span class="products__price">182.99€</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/shorw2.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Intermediate Shorty 5</h3>
+                        <span class="products__price">182.99€</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/intm1.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Intermediate Intégral 5</h3>
+                        <span class="products__price">239.99€</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/intw1.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">Intermediate Intégral 5</h3>
+                        <span class="products__price">239.99€</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/intm2.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Advanced Intégral 7</h3>
+                        <span class="products__price">352.99€</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/intw2.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">Advanced Intégral 7</h3>
+                        <span class="products__price">352.99€</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Ce sont les meilleures produits que l'on acquiert, et elles sont également toujours à la pointe de la technologie.
+                                     nouveautés et tendances, avec un prix très confortable et surtout avec l'attention
+                                     vous recevez, ils sont toujours attentifs à vos questions.
+                                </p>
+                                <h3 class="testimonial__date">3 Novembre 2022</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="Kat.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Katherine Langford</span>
+                                        <span class="testimonial__perfil-detail">Directrice d'un Club de Natation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Ce sont les meilleures produits que l'on acquiert, et elles sont également toujours à la pointe de la technologie.
+                                     nouveautés et tendances, avec un prix très confortable et surtout avec l'attention
+                                     vous recevez, ils sont toujours attentifs à vos questions.
+                                </p>
+                                <h3 class="testimonial__date">8 juillet 2023</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="Wej.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Wejdane</span>
+                                        <span class="testimonial__perfil-detail">Experte en matière</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Ce sont les meilleures produits que l'on acquiert, et elles sont également toujours à la pointe de la technologie.
+                                     nouveautés et tendances, avec un prix très confortable et surtout avec l'attention
+                                     vous recevez, ils sont toujours attentifs à vos questions.
+                                </p>
+                                <h3 class="testimonial__date">2 Août 2020</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="Moez.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Moez Agha</span>
+                                        <span class="testimonial__perfil-detail">Talentueux</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-left-arrow-alt' ></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="LALA.jpg" alt="" class="testimonial__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <!-- <section class="new section container" id="new">
+                <h2 class="section__title">
+                    Nouvelles Arrivées
+                </h2>
+                
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Nouveautés</span>
+        
+                                <img src="assets/img/new1.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Esm Produit</h3>
+                                    <span class="new__price">999€</span>
+                                </div>
+        
+                                <button class="button new__button">Ajouter au panier</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new2.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Esm Produit</h3>
+                                    <span class="new__price">999€</span>
+                                </div>
+        
+                                <button class="button new__button">Ajouter au panier</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new3.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Esm Produit</h3>
+                                    <span class="new__price">999€</span>
+                                </div>
+        
+                                <button class="button new__button">Ajouter au panier</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new4.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Esm Produit</h3>
+                                    <span class="new__price">999€</span>
+                                </div>
+        
+                                <button class="button new__button">Ajouter au panier</button>
+                            </article>                       
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Abonner Vous</h2>
+                        <p class="newsletter__description">
+                            Ne manquez pas vos réductions. Abonnez-vous à notre email
+                             newsletter pour obtenir les meilleures offres, réductions, coupons,
+                             cadeaux et bien plus encore.
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Entrer votre email" class="newsletter__input">
+                        <button class="button">
+                            Abonner
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact</h3>
+
+                    <ul class="footer__list">
+                        <li>Litoreal Sporting Club</li>
+                        <li>17 Rue des Fleurs, 13080 Aix en Provence</li>
+                        <li>+33 (0) 7 44 88 46 44</li>
+                        <li>Litoreal@website.com</li>
+                    </ul>
+                </div>
+                <!-- <div class="footer__content">
+                    <h3 class="footer__title">About Us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Copy Right</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <!-- <div class="footer__content">
+                    <h3 class="footer__title">Product</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Road bikes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Mountain bikes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Electric</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accesories</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Réseaux Sociaux</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.instagram.com/litoreal_official/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/litoreal_official/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/litoreal_official/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; Litoreal 2024 - Med.Rayen.JOMAA</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
